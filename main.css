@@ -28,9 +28,29 @@ li{
 .light-theme {
     --bg: var(--green);
     --fontCollor: var(--black);
+    --btnbg: var(--black);
+    --btnfontcolor: var(--white);
 }
 
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--green);
+    --btnbg: var(--white);
+    --btnfontcolor: var(--black);
+}
+
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    right: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnfontcolor);
+    background-color: var(--btnbg);
+}
+.btn:focus {
+    outline-style: none;
+
 }
